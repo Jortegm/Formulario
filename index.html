@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" media="screen">
+	<link rel ="icon" type ="image/png" href="img/favicon.png">
+    <script src="js/valida.js"></script>
+
+	<title>Validacion de Datos</title>
+</head>
+
+<body>
+	<div id="centro">
+			<h1>Formulario entrada de datos</h1>
+		<form id "formulario" action="" method="GET" name="Formulario">
+			<fieldset>
+			<legend>DATOS USUARIO</legend>
+			<br/>
+                <label for="dni">DNI:</label>
+				<input type="text" placeholder="Introduce su DNI" name="dni" id="dni" value="" />
+				<div id="errorDNI"></div>
+				<br/>
+				<label for="nombre">NOMBRE:</label>
+				<input type="text" placeholder="Introduce su Nombre" name="nombre" id="nombre" value=""/>
+				<div id="errorNombre"></div>
+				<br/>
+				<label for="apellidos">APELLIDOS:</label>
+				<input type="text" placeholder="Introduce su Apellidos" name="apellidos" id="apellidos" value=""/>
+				<div id="errorApellido"></div>
+				<br/>
+				<label for="cp">C&Oacute;DIGO POSTAL:</label>
+				<input type="text" placeholder="Introduce su C&oacute;digo Postal" name="cp" id ="cp" value=""/>
+				<div id="errorCodigo"></div>
+				<br/>
+				<label for="telefono">TEL&Eacute;FONO:</label>
+				<input type="text" placeholder="Introduce su Tel&eacute;fono"  name="telefono" id="telefono" value=""/>
+				<div id="errorTelefono"></div>
+				<br/>
+				<label for="fecha">FECHA:</label>
+				<input type="text"  placeholder="Introduce su Fecha de Nacimiento" name="fecha" id="fecha" value=""/>
+				<div id="errorFecha"></div>
+				<br/>
+				<label for="curriculum">BREVE CURRICULO:</label>
+				<br/>
+				<textarea placeholder="Escriba aqui un breve resumen de su curriculum!" id="area" name="area" type="text" value="" ></textarea>
+				<div id="Contador"></div>
+				<div id="errorArea"></div>
+				<br/>
+				<input type="submit" id="submit" name ="enviar"  value="Enviar"/>
+				<input type="submit" id="limpiar"  value="Limpiar"/>
+
+                <div id="Validacion"></div>
+
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>
